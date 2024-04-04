@@ -26,6 +26,6 @@ for k,v in up_interface.items():
     print('key: ', k)
     print('value: ', v)
     for part in v:
-        print(part.address)
+        print("{%8} : {}".format(part.family.name, part.address))
     #for snicaddr in interface:
     #    print(snicaddr.address)
